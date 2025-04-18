@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mObywatel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Top bar -->
+        <div class="top_bar">
+            <p class="top_title">mObywatel</p>
+        </div>
+
+        <!-- Screens -->
+        <div id="screen_pulpit" class="screen active">
+            <h2>Pulpit</h2>
+            <p>Główna karta użytkownika.</p>
+        </div>
+
+        <div id="screen_dokumenty" class="screen">
+            <h2>Dokumenty</h2>
+            <p>Lista dokumentów.</p>
+        </div>
+
+        <div id="screen_uslugi" class="screen">
+            <h2>Usługi</h2>
+            <p>Lista dostępnych usług.</p>
+        </div>
+
+        <div id="screen_kodqr" class="screen">
+            <h2>Kod QR</h2>
+            <p>Wygenerowany kod QR.</p>
+        </div>
+
+        <div id="screen_wiecej" class="screen">
+            <h2>Więcej</h2>
+            <p>Ustawienia i dodatkowe opcje.</p>
+        </div>
+
+        <!-- Bottom navigation -->
+        <div class="bottom_bar">
+            <button onclick="switchScreen('pulpit')">Pulpit</button>
+            <button onclick="switchScreen('dokumenty')">Dokumenty</button>
+            <button onclick="switchScreen('uslugi')">Usługi</button>
+            <button onclick="switchScreen('kodqr')">Kod QR</button>
+            <button onclick="switchScreen('wiecej')">Więcej</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
